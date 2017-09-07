@@ -1,0 +1,53 @@
+body {
+	background-color: #FFBD66;
+	background-image: url("http://images.clipartpanda.com/sandwich-clipart-burger_sandwich_PNG4120.png");
+	background-size: 95%;
+}
+
+.which {
+	display: inline-flex;
+}
+
+.meats {
+	border: solid black 2px;
+	padding: 10px;
+	margin-right: 5px;
+	background-color: #FFCA7F;
+}
+
+.bread {
+	border: solid black 2px;
+	padding: 10px;
+	margin-right: 5px; 
+	background-color: #FFCA7F;
+}
+
+.cheese {
+	border: solid black 2px;
+	padding: 10px;
+	margin-right: 5px;
+	background-color: #FFCA7F;
+}
+
+.vegies {
+	border: solid black 2px;
+	padding: 10px;
+	margin-right: 5px;
+	background-color: #FFCA7F;
+}
+
+.condiments {
+	border: solid black 2px;
+	padding: 10px;
+	margin-right: 5px;
+	background-color: #FFCA7F;
+}
+
+.finalPrice {
+	border: solid black 1px;
+	background-color: white;
+	width: 100px;
+	height: 30px;
+}
+
+
