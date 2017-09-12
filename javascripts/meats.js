@@ -5,7 +5,6 @@ var SandwichMaker = (function(maker) {
         "ham": .25,
         "chicken": .25
     }
-    console.log(meats);
     maker.setMeats = function(meatType) {
         return meats[meatType]
     };

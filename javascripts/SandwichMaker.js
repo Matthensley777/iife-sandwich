@@ -12,10 +12,6 @@ var SandwichMaker = (function() {
         getTopping: function() {
             return totalPrice;
         },
-        remove: function() {
-            totalPrice -= toppingPrice;
-            return toppingPrice;
-        },
         getTotalPrice: function() {
             return totalPrice;
         }

@@ -3,7 +3,6 @@ var SandwichMaker = (function(maker) {
         "white": 1,
         "wheat": 1.2
     }
-    console.log(bread);
 
     maker.setBread = function(breadType) {
         return bread[breadType];

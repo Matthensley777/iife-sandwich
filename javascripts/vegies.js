@@ -5,7 +5,6 @@ var SandwichMaker = (function(maker) {
         "pickle": .51,
         "olives": .54
     }
-    console.log(vegies);
     maker.setVegies = function(vegiesType) {
         return vegies[vegiesType];
     }
