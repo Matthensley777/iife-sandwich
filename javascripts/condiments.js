@@ -5,7 +5,6 @@ var SandwichMaker = (function(maker) {
         "ranch": .25,
         "bbq": .21
     }
-    console.log(cons);
     maker.setCons = function(consType) {
         return cons[consType];
     }

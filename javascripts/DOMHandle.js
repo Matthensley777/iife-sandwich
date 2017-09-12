@@ -1,15 +1,15 @@
-var finalSandwichPrice = 0;
+let finalSandwichPrice = 0;
 
 // Variable to hold topping that the user selects
-var selectedTopping;
+let selectedTopping;
 
 // Get a reference to the <select> element that has all the meat options
-var meatChooser = document.getElementById("meats");
-var breadChooser = document.getElementById("bread");
-var vegieChooser = document.getElementById("vegies");
-var cheeseChooser = document.getElementById("cheese");
-var condimentChooser = document.getElementById("condiments");
-var finalPrice = document.getElementById("finalPrice");
+let meatChooser = document.getElementById("meats");
+let breadChooser = document.getElementById("bread");
+let vegieChooser = document.getElementById("vegies");
+let cheeseChooser = document.getElementById("cheese");
+let condimentChooser = document.getElementById("condiments");
+let finalPrice = document.getElementById("finalPrice");
 
 
 
@@ -24,7 +24,6 @@ breadChooser.addEventListener("change", function(event) {
         SandwichMaker.addTopping(breadPrice);
     }
 
-    // finalPrice.innerHTML = SandwichMaker.getTopping();
 })
 
 meatChooser.addEventListener("change", function(event) {
@@ -36,7 +35,6 @@ meatChooser.addEventListener("change", function(event) {
         var meatPrice = SandwichMaker.setMeats(event.target.value) * -1;
         SandwichMaker.addTopping(meatPrice);
     }
-    // finalPrice.innerHTML = SandwichMaker.getTopping();
 })
 
 vegieChooser.addEventListener("change", function(event) {
@@ -48,7 +46,6 @@ vegieChooser.addEventListener("change", function(event) {
         var vegiePrice = SandwichMaker.setVegies(event.target.value) * -1;
         SandwichMaker.addTopping(vegiePrice);
     }
-    // finalPrice.innerHTML = SandwichMaker.getTopping();
 })
 
 cheeseChooser.addEventListener("change", function(event) {
@@ -61,7 +58,6 @@ cheeseChooser.addEventListener("change", function(event) {
         SandwichMaker.addTopping(cheesePrice);
     }
 
-    // finalPrice.innerHTML = SandwichMaker.getTopping();
 })
 
 condimentChooser.addEventListener("change", function(event) {
@@ -74,10 +70,23 @@ condimentChooser.addEventListener("change", function(event) {
         SandwichMaker.addTopping(consPrice);
     }
 
-    // finalPrice.innerHTML = SandwichMaker.getTopping();
 })
 
 document.getElementById("button").addEventListener("click", function() {
     finalSandwichPrice = SandwichMaker.getTotalPrice();
     finalPrice.innerHTML = `total: $${finalSandwichPrice}`;
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+

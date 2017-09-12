@@ -5,7 +5,6 @@ var SandwichMaker = (function(maker) {
         "swiss": .25,
         "blue": .25
     }
-    console.log(cheese);
     maker.setCheese = function(cheeseType) {
         return cheese[cheeseType];
     }
